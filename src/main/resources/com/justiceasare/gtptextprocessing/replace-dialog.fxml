@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.justiceasare.gtptextprocessing.controllers.ReplaceDialogController"
+      spacing="20" alignment="CENTER"  stylesheets="@main.css">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Label text="Text Replacement" styleClass="header-title"/>
+    <TextField fx:id="regexInput" prefWidth="400" prefHeight="50" promptText="Enter regex pattern"/>
+    <TextField fx:id="replacementInput" prefWidth="400" prefHeight="50" promptText="Enter replacement text"/>
+    <HBox spacing="15" alignment="CENTER">
+        <Button text="Replace" onAction="#handleReplace" />
+        <Button text="Cancel" onAction="#handleCancel" />
+    </HBox>
+
+</VBox>

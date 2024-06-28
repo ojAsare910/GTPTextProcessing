@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox  xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.14-internal"
+      fx:controller="com.justiceasare.gtptextprocessing.controllers.AddDialogController"
+       spacing="20" alignment="CENTER"  stylesheets="@main.css">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <TextArea fx:id="dataInput" promptText="Enter data" wrapText="true"/>
+    <HBox spacing="15" alignment="CENTER">
+        <Button onAction="#handleAdd" text="Add" />
+        <Button onAction="#handleCancel" text="Cancel" />
+    </HBox>
+</VBox>

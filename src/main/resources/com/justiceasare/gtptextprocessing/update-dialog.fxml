@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.geometry.Insets?>
+<VBox prefHeight="244.0" prefWidth="499.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.justiceasare.gtptextprocessing.controllers.UpdateDialogController"
+      spacing="20" alignment="CENTER" stylesheets="@main.css">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Label text="Selected Item:" />
+    <TextArea fx:id="dataInput" promptText="Enter new data" wrapText="true"/>
+    <HBox spacing="15" alignment="CENTER">
+        <Button text="Update" onAction="#handleUpdate" />
+        <Button text="Cancel" onAction="#handleCancel" />
+    </HBox>
+</VBox>

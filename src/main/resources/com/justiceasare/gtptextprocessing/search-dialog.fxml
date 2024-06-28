@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.justiceasare.gtptextprocessing.controllers.SearchDialogController"
+      spacing="20" alignment="CENTER" stylesheets="@main.css">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <stylesheets>
+        <URL value="@main.css" />
+    </stylesheets>
+    <Label text="Selected Item:" styleClass="sub-header"/>
+    <TextArea fx:id="selectedItemLabel" editable="false" wrapText="true"/>
+
+    <VBox spacing="5">
+        <Label text="Regex Pattern:"/>
+        <TextField fx:id="regexInput" promptText="Enter regex pattern"/>
+        <Button text="Search by Regex" onAction="#handleSearchByRegex" styleClass="search-button"/>
+    </VBox>
+
+    <VBox spacing="5">
+        <Label text="Search Word:"/>
+        <TextField fx:id="searchWordInput" promptText="Enter search word"/>
+        <Button text="Search by Word" onAction="#handleSearchByWord" styleClass="search-button"/>
+    </VBox>
+    <Button text="Cancel" onAction="#handleClose" styleClass="cancel-button"/>
+</VBox>

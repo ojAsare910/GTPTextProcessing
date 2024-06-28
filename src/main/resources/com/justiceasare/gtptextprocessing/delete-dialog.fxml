@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.justiceasare.gtptextprocessing.controllers.DeleteDialogController"
+      spacing="20" alignment="CENTER" stylesheets="@main.css">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+    <Label text="Are you sure you want to delete the selected item?" styleClass="header-label"/>
+    <HBox spacing="15" alignment="CENTER">
+        <Button onAction="#handleDelete" text="Delete" styleClass="delete-button"/>
+        <Button onAction="#handleCancel" text="Cancel" styleClass="cancel-button"/>
+    </HBox>
+</VBox>
